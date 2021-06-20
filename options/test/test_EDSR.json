@@ -1,0 +1,33 @@
+{
+    "mode": "sr",
+    "use_cl": false,
+    "gpu_ids": [0],
+
+    "scale": 4,
+    "degradation": "BI",
+    "is_train": false,
+    "use_chop": true,
+    "rgb_range": 255,
+    "self_ensemble": false,
+
+    "datasets": {
+        "test_set3": {
+             "mode": "LR",
+             "dataroot_LR": "./static/downloads",
+             "data_type": "img"
+         }
+    },
+
+    "networks": {
+        "which_model": "EDSR",
+        "num_features": 256,
+        "in_channels": 3,
+        "out_channels": 3,
+        "num_blocks": 32,
+        "res_scale": 0.1
+    },
+
+    "solver": {
+        "pretrained_path": "./models/EDSR.pth"
+    }
+}
