@@ -8,14 +8,14 @@
     conda create -n <environment_name> --file requirements.txt
     ```
 
-3. **Download pre-trained models.** Download the initial weights (pre-trained on ImageNet) for the backbones you are planning to use and place them into `<project>/models/weights/`.
+3. **Download pre-trained models.** Download the pretrained weights of some model and put it to yout `<project>/models/weights/` folder.
 
     | Backbone | Initial Weights | Comment |
     |:---:|:---:|:---:|
-    | WideResNet38 | [ilsvrc-cls_rna-a1_cls1000_ep-0001.pth (402M)](https://download.visinf.tu-darmstadt.de/data/2020-cvpr-araslanov-1-stage-wseg/models/ilsvrc-cls_rna-a1_cls1000_ep-0001.pth) | Converted from [mxnet](https://github.com/itijyou/ademxapp) |
-    | VGG16 | [vgg16_20M.pth (79M)](https://download.visinf.tu-darmstadt.de/data/2020-cvpr-araslanov-1-stage-wseg/models/vgg16_20M.pth) | Converted from [Caffe](http://liangchiehchen.com/projects/Init%20Models.html) |
-    | ResNet50 | [resnet50-19c8e357.pth](https://download.pytorch.org/models/resnet50-19c8e357.pth) | PyTorch official |
-    | ResNet101 | [resnet101-5d3b4d8f.pth](https://download.pytorch.org/models/resnet101-5d3b4d8f.pth) | PyTorch official |
+    | EDSR | [EDSR.pth (512M)]https://drive.google.com/file/d/1Y67gODB1Krq4LEXzDk1ChKzWFbGvn2ni/view?usp=sharing)|
+    | SRFBN | [EDSR.pth (49M)](https://drive.google.com/file/d/1KLz5TGhyebk9uUL09Vc0IlT_n7Z99w07/view?usp=sharing) |
+    | D_DBPN | [D_DBPN.pth](https://drive.google.com/file/d/1B52cQ_kvM6ThJu96ZxjEUmlxFarPHyBt/view?usp=sharing) |
+    | RCAN | [RCAN.pth](https://drive.google.com/file/d/16Zv9A8njlNOJia1PIKjiXysejFugLmBG/view?usp=sharing) |
 
 
 ### How to Run
@@ -35,15 +35,5 @@ You can change the port and the url domain by setting in the line: ```app.run()`
 The input image will be stored in ```static/downloads```, while the super-resolved image will be available in ```static/uploads```
 
 ## Acknowledgements
-We thank PyTorch team, and Jiwoon Ahn for releasing his [code](https://github.com/jiwoon-ahn/psa) that helped in the early stages of this project.
+We thankZhen Li for releasing his [code](https://github.com/Paper99/SRFBN_CVPR19) that helped in the early stages of this project.
 
-## Citation
-We hope that you find this work useful. If you would like to acknowledge us, please, use the following citation:
-```
-@inproceedings{Araslanov:2020:WSEG,
-  title     = {Single-Stage Semantic Segmentation from Image Labels},
-  author    = {Araslanov, Nikita and and Roth, Stefan},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2020}
-}
-```
