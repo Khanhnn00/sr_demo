@@ -12,7 +12,7 @@
 
     | Backbone | Initial Weights | Comment |
     |:---:|:---:|:---:|
-    | EDSR | [EDSR.pth (512M)]https://drive.google.com/file/d/1Y67gODB1Krq4LEXzDk1ChKzWFbGvn2ni/view?usp=sharing)|
+    | EDSR | [EDSR.pth (512M)](https://drive.google.com/file/d/1Y67gODB1Krq4LEXzDk1ChKzWFbGvn2ni/view?usp=sharing)|
     | SRFBN | [EDSR.pth (49M)](https://drive.google.com/file/d/1KLz5TGhyebk9uUL09Vc0IlT_n7Z99w07/view?usp=sharing) |
     | D_DBPN | [D_DBPN.pth](https://drive.google.com/file/d/1B52cQ_kvM6ThJu96ZxjEUmlxFarPHyBt/view?usp=sharing) |
     | RCAN | [RCAN.pth](https://drive.google.com/file/d/16Zv9A8njlNOJia1PIKjiXysejFugLmBG/view?usp=sharing) |
